@@ -1,8 +1,8 @@
 import react from 'react';
 
-const TabOptions = ()=>{
+const TabOptions = ({activeTab, setActiveTab})=>{
     return(
-        <div>This is tab option</div>
+        <></>
     )
 }
 
