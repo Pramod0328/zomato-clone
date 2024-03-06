@@ -3,7 +3,7 @@ import react from 'react';
 const TabOptions = ({activeTab, setActiveTab})=>{
     return(
         <div>
-            <button onClick={()=>setActiveTab("Nightlife")}>On Click</button>
+            This is Tab option
         </div>
     )
 }
