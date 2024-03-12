@@ -2,6 +2,10 @@ import React from 'react';
 import './header.css'; 
 import { TiLocationOutline } from "react-icons/ti";
 import { FaCaretDown } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
+import { FaAngleDown } from "react-icons/fa";
+
+
 
 
 
@@ -23,7 +27,20 @@ const Header = () => {
                                 <div>Banglore</div>
                             </div>
                             <FaCaretDown className='absulte-center '/>
+                        </div>  
+                        <div className='location-search-separator'></div>
+                        <div className='header-searchbar'>
+                                <CiSearch className='absolute-center search-icon'/>
+                                <input placeholder='Search for restaurant, cuisine or a dish'
+                                className='search-input'/> 
+                                
                         </div>
+                    </div>
+                    <div className='profile-wrapper'>
+                        <img src='https://cdn4.iconfinder.com/data/icons/food-9/512/food-09-512.png' alt='profile' 
+                        className='header-profile-image'/>
+                        <span className='header-username'>Pramod</span>
+                        <FaAngleDown className='absolute-center profile-options-icon'/>
                     </div>
                 </div>
             </div>

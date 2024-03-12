@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import "../src/styles/commonClasses.css";
-@import "../src/styles/variable.css";
+@import "./styles/commonClasses.css";
+@import "./styles/variable.css";
 body {
     margin: 0;
     font-family: "Nunito", sans-serif;
