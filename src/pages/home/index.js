@@ -9,7 +9,7 @@ import NightLife from '../../components/nightlife/index.js';
 
 const HomePage = () => {
 
-    const [activeTab, setActiveTab] = useState("NightLife");
+    const [activeTab, setActiveTab] = useState("");
 
     return (
         <div>
@@ -28,7 +28,7 @@ const getCorrectScreen = (tab) => {
             return <Delivery/>;
         case "Dining Out":
             return <DiningOut/>;
-        case "NightLife":
+        case "Nightlife":
             return <NightLife/>;
         default: 
             return <Delivery/>;

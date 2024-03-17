@@ -3,7 +3,7 @@ import './nightlife.css';
 
 const NightLife = ()=>{
     return(
-        <div>nightlife</div>
+        <div>this is nightlife</div>
     )
 }
 
