@@ -3,6 +3,7 @@ import './delivery.css';
 import Filters from "../common/filters";
 import { LuSettings2 } from "react-icons/lu";
 import { PiArrowsDownUpDuotone } from "react-icons/pi";
+import DeliveryCollections from "./deliveryCollection";
 
 
 
@@ -43,6 +44,7 @@ const Delivery = ()=>{
     return(
             <div className="max-width">
             <div><Filters filterList={deliveryFilters}/></div>
+            <div>{<DeliveryCollections/>}</div>
             </div> 
     )
 }
