@@ -5,6 +5,8 @@ import { LuSettings2 } from "react-icons/lu";
 import { PiArrowsDownUpDuotone } from "react-icons/pi";
 import DeliveryCollections from "./deliveryCollection";
 import TopBrands from "./topbrands";
+import ExploreSection from "../common/exploreSection";
+import { restaurants } from "../../data/restaurant";
 
 
 
@@ -39,7 +41,10 @@ const deliveryFilters=[
         id:6,
         title:"Great Offers",
     },
-]
+];
+
+const restaurantList = restaurants;
+
 
 const Delivery = ()=>{
     return(
@@ -47,6 +52,7 @@ const Delivery = ()=>{
             <div><Filters filterList={deliveryFilters}/></div>
             <DeliveryCollections/>
             <TopBrands/>
+            <ExploreSection list={restaurantList} collectionName = 'Delivery restaurants in Banglore'/>
             </div> 
     )
 }

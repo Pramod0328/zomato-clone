@@ -64,6 +64,7 @@ const TopBrands = ()=>{
                     return <div>
                         <div className="top-brands-cover">
                             <img src={brand.cover} className="top-brands-image" alt={brand.time}/>
+                            <div>{brand.time}</div>
                         </div>
                     </div>
                 })}
