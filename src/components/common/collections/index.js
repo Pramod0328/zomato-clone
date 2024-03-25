@@ -1,5 +1,17 @@
 import React from 'react'
 import './collection.css';
+import { FaCaretRight } from "react-icons/fa";
+import Slider from "react-slick";
+import NextArrow from '../carousal/nextArrow';
+import PrevArrow from '../carousal/preArrow';
+
+const settings = {
+  infinite: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  nextArrow: <NextArrow/>,
+  prevArrow: <PrevArrow/>
+};
 
 const Collection = ({list}) => {
   return (
@@ -12,8 +24,23 @@ const Collection = ({list}) => {
                 </div>
                 <div className='collection-location'>
                     <div>All collections in Banglore</div>
+                    <FaCaretRight className='absolute-center'/>
                 </div>
             </div>
+             <Slider {...settings}>
+              {list.map((item)=>(
+                <div>
+                  <div className='collection-cover'>
+                    <img src={item.cover} className='collection-image' alt={item.title}/>
+                    <div className='gradient-bg'></div>
+                    <div className='collection-card-title'>{item.title}</div>
+                    <div className='collection-card-subtitle'>
+                      <div>{item.places}</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+             </Slider>
         </div>
     </div>
   ) 
