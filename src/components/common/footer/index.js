@@ -3,7 +3,7 @@ import react from 'react';
 const Footer = ()=>{
     return(
         <>
-        <div>made with Pramod Acharya🔥</div>
+        <div className='absolute-center'>made with Pramod Acharya🔥</div>
         </>
     )
 }

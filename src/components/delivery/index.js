@@ -52,7 +52,7 @@ const Delivery = ()=>{
             <div><Filters filterList={deliveryFilters}/></div>
             <DeliveryCollections/>
             <TopBrands/>
-            <ExploreSection list={restaurantList} collectionName = 'Delivery restaurants in Banglore'/>
+            <ExploreSection list={restaurantList}  collectionName = 'Delivery restaurants in Banglore'/>
             </div> 
     )
 }
